@@ -1,0 +1,295 @@
+@font-face{
+    font-family: Calibri-LightItalic;
+    src:url(../fuentes/calibri-light-italic/calibrili.ttf)
+}
+
+h1{
+    position: relative; 
+    display: inline-block; 
+    font-size: 45px; 
+    font-family: Verdana;
+
+}
+h2{
+    font-size: 35px;
+}
+
+h1::before{
+    content:'';
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-color: currentColor;
+    top: 0;
+}
+
+p{      
+    font-size: 23px;
+    font-family: Verdana;
+}
+
+/*
+*/
+.elementoLinea{
+    display: inline;
+}
+
+.text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+
+  .fuenteLight{
+    font-weight: normal;
+  }
+
+.BannerPrincipal{
+    background: rgba(27,9,2,1);
+}
+#MauricioBanner{
+    max-width: 550px;
+    z-index: 10;
+    position: relative;  
+}
+#LogoBanner{
+    max-width: 350px;
+    margin-bottom: 25px;
+}
+.icono-banner{
+    max-width: 45px;
+}
+#text.banner{
+    font-family: Calibri-LightItalic;
+}
+#descripcion{
+    background: url(../img/seccion-2_02.jpg) , #5c5c5c;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.listonCaracteristicas{
+    color: #a7bdcc;
+    padding-top: 30px;
+    font-family: Calibri;
+}
+
+#dirigidoA{
+    background-color: #225a8b;
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
+#citadelbombillo{
+    font-size: 30px;
+}
+#listaMetodo{
+    padding: 10px;
+    border: #a7bdcc 2px solid;
+}
+ul{
+    list-style-image: url('../img/tilde.png');
+}
+li{
+    background-repeat: no-repeat;
+    background-position: -2px 1px;
+    padding-left: 16px;
+}
+#listarecuadro{
+    font-size: 24px;
+}
+
+#MetodoOtraforma{
+    background-color: #a7bdcc;
+    padding: 50px;   
+}
+#noEsUnMetodo{
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+#manoSenalando{
+    width: 70px; height: 100px;
+}
+.laTransformacion{
+    background-color: #d4dbe5;  
+    padding-bottom:30px ;
+    padding-top: 30px; 
+}
+#bombillo{
+    width: 120px; height: 120px;
+}
+
+#textLaTrans{
+    color:#5c5c5c;
+    font-family: Calibri
+    
+}
+#rayitablanca::after{
+    content:'';
+    position: absolute;
+    width: 120px;
+    height: 7px;
+    background-color: white;
+    padding-top: 0.3px;
+    left:0%;
+}
+
+
+#bio{
+    padding-top: 50px;
+    background: url(../img/fondobio_02.jpg) , #5c5c5c;
+    background-image: cover;
+    background-position: center top;
+    font: normal;
+    left:  initial;
+    background-repeat: no-repeat;
+}
+.biografia{
+    font-family: Calibri;
+    padding-bottom: 30px;
+}
+#biotext{
+    padding-top: 70px;
+    padding-bottom: 260px;
+}
+#titleBio{
+    font: verdana ;
+    padding-top: 50px;
+}
+
+/*footer*/
+#liston-gris{
+    width: 100%;
+    height: 20px;
+    background-color: #979799;
+}
+
+.footer{
+    background-color: #040407;
+}
+
+#iconR{
+    max-width: 225px;
+}
+#iconC{
+    max-width: 350px;
+}
+#iconL{
+    max-width: 180px;
+}
+
+#redesTablet{
+    display: none;
+}
+#biografia{
+    size: 40px;
+}
+
+@media screen and (max-width: 575px) {
+    p{ 
+        font-size: 22px;
+    }
+
+    .BannerPrincipal{
+        background: rgba(27,9,2,1); 
+    }
+
+    #MauricioBanner {
+        max-width: 100%;
+    }
+    #LogoBanner{
+        max-width: 200px;
+        margin-bottom: 25px;
+    }
+
+    .bio {
+        padding-top: 0px;
+    }
+
+    .bio .container{
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-top: 50px;
+    }
+
+    #iconR{
+        max-width: 100px;
+        text-align: center;
+    }
+    #iconC{
+        max-width: 100px;
+    }
+    #iconL{
+        max-width: 75px;
+    }
+    #noEsUnMetodo{
+        background-color: #102C44;
+        }
+  }
+
+  @media screen and (max-width: 992px) and (min-width: 767px) {
+    .BannerPrincipal{
+        background: rgba(27,9,2,1);
+    background: -moz-linear-gradient(45deg, rgba(27,9,2,1) 0%, rgba(27,9,2,1) 29%, rgba(27,9,2,1) 63%, rgba(84,44,30,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(27,9,2,1)), color-stop(29%, rgba(27,9,2,1)), color-stop(63%, rgba(27,9,2,1)), color-stop(100%, rgba(84,44,30,1)));
+    background: -webkit-linear-gradient(45deg, rgba(27,9,2,1) 0%, rgba(27,9,2,1) 29%, rgba(27,9,2,1) 63%, rgba(84,44,30,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(27,9,2,1) 0%, rgba(27,9,2,1) 29%, rgba(27,9,2,1) 63%, rgba(84,44,30,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(27,9,2,1) 0%, rgba(27,9,2,1) 29%, rgba(27,9,2,1) 63%, rgba(84,44,30,1) 100%);
+    background: linear-gradient(45deg, rgba(27,9,2,1) 0%, rgba(27,9,2,1) 29%, rgba(27,9,2,1) 63%, rgba(84,44,30,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b0902', endColorstr='#542c1e', GradientType=1 );
+    }
+
+    #MauricioBanner {
+        max-width: 120%;
+        padding-top: 100px;
+    }
+    .redesSocialesmd{
+        position: absolute;
+        display: inline-block;
+    }
+
+    #LogoBanner {
+        max-width: 100px;
+        margin-bottom: 25px;
+    }
+
+    #redesTablet{
+        padding-top: 120px;
+        display: inline;
+        position: absolute;
+        width: 35px;
+        height: 100%;
+        left: 90%;
+        z-index: 10;
+    }
+    #redesTablet img{
+        position: relative;
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+    .icono-banner{
+        display: none;
+    }
+  }
+
+  @media screen and (min-width: 993px) {
+    .BannerPrincipal{
+        background: rgba(27,9,2,1);
+        background: -moz-linear-gradient(45deg, rgba(27,9,2,1) 0%, rgba(27,9,2,1) 29%, rgba(27,9,2,1) 63%, rgba(84,44,30,1) 100%);
+        background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(27,9,2,1)), color-stop(29%, rgba(27,9,2,1)), color-stop(63%, rgba(27,9,2,1)), color-stop(100%, rgba(84,44,30,1)));
+        background: -webkit-linear-gradient(45deg, rgba(27,9,2,1) 0%, rgba(27,9,2,1) 29%, rgba(27,9,2,1) 63%, rgba(84,44,30,1) 100%);
+        background: -o-linear-gradient(45deg, rgba(27,9,2,1) 0%, rgba(27,9,2,1) 29%, rgba(27,9,2,1) 63%, rgba(84,44,30,1) 100%);
+        background: -ms-linear-gradient(45deg, rgba(27,9,2,1) 0%, rgba(27,9,2,1) 29%, rgba(27,9,2,1) 63%, rgba(84,44,30,1) 100%);
+        background: linear-gradient(45deg, rgba(27,9,2,1) 0%, rgba(27,9,2,1) 29%, rgba(27,9,2,1) 63%, rgba(84,44,30,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b0902', endColorstr='#542c1e', GradientType=1 );
+        z-index: -1;
+    }
+
+    #MauricioBanner {
+        max-width: 100%;
+        padding-top: 50px;
+    }
+}
